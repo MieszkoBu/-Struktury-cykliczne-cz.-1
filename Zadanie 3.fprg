@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="miesz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-06 10:31:21 AM"/>
+        <attribute name="created" value="bWllc3o7REVTS1RPUC1BRkRSVE80OzIwMjItMTEtMDY7MTA6MjU6NTAgQU07Mjg5MQ=="/>
+        <attribute name="edited" value="bWllc3o7REVTS1RPUC1BRkRSVE80OzIwMjItMTEtMDY7MTA6MzE6MjEgQU07MTsyOTk0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="liczba, wynik" type="Integer" array="False" size=""/>
+            <assign variable="wynik" expression="0"/>
+            <input variable="liczba"/>
+            <do expression="liczba!=0">
+                <assign variable="wynik" expression="wynik+liczba%10"/>
+                <assign variable="liczba" expression="liczba/10"/>
+            </do>
+            <output expression="wynik" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
