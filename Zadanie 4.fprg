@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="miesz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-06 11:47:23 AM"/>
+        <attribute name="created" value="bWllc3o7REVTS1RPUC1BRkRSVE80OzIwMjItMTEtMDY7MTA6MzE6NDEgQU07Mjg4OA=="/>
+        <attribute name="edited" value="bWllc3o7REVTS1RPUC1BRkRSVE80OzIwMjItMTEtMDY7MTE6NDc6MjMgQU07ODszMDEx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="X, N, i, a, wynik" type="Integer" array="False" size=""/>
+            <input variable="X"/>
+            <input variable="N"/>
+            <assign variable="wynik" expression="0"/>
+            <for variable="i" start="0" end="N-1" direction="inc" step="1">
+                <input variable="a"/>
+                <assign variable="wynik" expression="wynik+(X-a)"/>
+                <if expression="wynik&lt;0">
+                    <then>
+                        <assign variable="wynik" expression="0"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <assign variable="wynik" expression="wynik+X"/>
+            <output expression="wynik" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
